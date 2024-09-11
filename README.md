@@ -1,2 +1,2 @@
-# react_muhammad_rizki_ramadhan
+# React_muhammad_Rizki_Ramadhan
 Pengumpulan Tugas Alterra Academy - Batch 7
