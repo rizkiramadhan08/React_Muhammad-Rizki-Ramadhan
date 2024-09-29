@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulasi DOM</title>
+</head>
+<body>
+
+<div id="quote"></div>
+
+<button onclick="displayQuote()">Generate Quote</button>
+
+<script>
+    const quotes = [
+        'Hidup adalah pengalaman yang unik dan berharga.',
+        'Kita tidak dapat mengubah masa lalu, tapi kita dapat menggunakan pengalaman itu untuk membangun masa depan yang lebih baik.',
+        'Hidup ini singkat, maka kita harus menjalaninya dengan penuh kesadaran, keikhlasan, dan kebahagiaan.'
+    ];
+
+    function displayQuote() {
+        // Pilih kutipan acak dari array quotes
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomQuote = quotes[randomIndex];
+
+        // Tampilkan kutipan di dalam div dengan id "quote"
+        document.getElementById('quote').innerText = randomQuote;
+    }
+</script>
+
+</body>
+</html>
