@@ -9,23 +9,23 @@ const Login = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-
-    const dummyUser = { username: 'admin', password: 'password123' };
+  
+    const dummyUser = { username: 'rizki', password: 'admin' };
     const user = JSON.parse(localStorage.getItem('user'));
-
-    if (user && user.username === username && user.password === password) {
-      localStorage.setItem('isLoggedIn', true);
-      navigate("/create-product"); // Navigasi ke Create Product
-      window.location.reload();
-    } else if (username === dummyUser.username && password === dummyUser.password) {
+  
+    if (username === dummyUser.username && password === dummyUser.password) {
       localStorage.setItem('user', JSON.stringify(dummyUser));
       localStorage.setItem('isLoggedIn', true);
-      navigate("/create-product"); // Navigasi ke Create Product
+      navigate("/create-product"); 
+      window.location.reload();
+    } else if (user && user.username === username && user.password === password) {
+      localStorage.setItem('isLoggedIn', true);
+      navigate("/create-product");
       window.location.reload();
     } else {
       setErrorMessage('Invalid username or password');
     }
-  };
+  };  
 
   return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100">
