@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Web Page</title>
+    <style>
+        /* Warna gelap yang mengonsumsi lebih sedikit energi pada layar */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1A1A1A; /* Hitam keabu-abuan */
+            color: #E0E0E0; /* Abu-abu terang untuk teks */
+        }
+        header, footer {
+            background-color: #333333; /* Warna gelap (abu-abu tua) */
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            background-color: #2B2B2B; /* Warna gelap untuk bagian utama */
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #6AB04C; /* Hijau lembut */
+        }
+        /* Menentukan ukuran maksimal untuk video */
+        .high-res-background {
+            max-width: 100%; /* Membatasi lebar video agar sesuai dengan layar */
+            height: auto; /* Menyesuaikan tinggi video secara proporsional */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Eco-Friendly Web Page</h1>
+    </header>
+    <!-- Video yang dioptimalkan dengan ukuran lebih kecil -->
+    <video autoplay loop muted class="high-res-background">
+        <source src="forest_kompres.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <main>
+        <section class="content">
+            <h2>About Me</h2>
+            <!-- Gambar resolusi lebih rendah dan format dioptimalkan -->
+            <img src="https://via.placeholder.com/800x600" alt="Optimized Image" loading="lazy">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex.</p>
+        </section>
+        <section class="content">
+            <h2>My Interests</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae velit ex.</p>
+            <ul class="link-list">
+                <li><a href="#">Interest 1</a></li>
+                <li><a href="#">Interest 2</a></li>
+                <li><a href="#">Interest 3</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Eco-Friendly Web Page</p>
+    </footer>
+</body>
+</html>
